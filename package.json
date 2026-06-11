@@ -1,5 +1,5 @@
 {
-  "name": "node-seo",
+  "name": "seoplus",
   "version": "1.0.0",
   "description": "React + Vite SEO utility for managing head tags, structured data, and SEO validation with a clean API and build-time plugin support",
   "type": "module",
@@ -44,10 +44,10 @@
 
   "repository": {
     "type": "git",
-    "url": "https://github.com/Loki-Xer/node-seo.git"
+    "url": "https://github.com/Loki-Xer/seoplus.git"
   },
-  "homepage": "https://github.com/Loki-Xer/node-seo#readme",
+  "homepage": "https://github.com/Loki-Xer/seoplus#readme",
   "bugs": {
-    "url": "https://github.com/Loki-Xer/node-seo/issues"
+    "url": "https://github.com/Loki-Xer/seoplus/issues"
   }
 }
