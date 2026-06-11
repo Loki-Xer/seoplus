@@ -1,6 +1,6 @@
 {
   "name": "seoplus",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "React + Vite SEO utility for managing meta tags, Open Graph, Twitter cards, JSON-LD schema, sitemap generation, and real-time SEO validation",
   "type": "module",
   "main": "./dist/index.cjs",
