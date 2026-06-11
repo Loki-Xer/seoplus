@@ -2,6 +2,9 @@
 
 Modern SEO toolkit for React and Vite applications.
 
+[![npm](https://img.shields.io/npm/v/seoplus)](...)
+[![GitHub](https://img.shields.io/github/stars/Loki-Xer/seoplus)](...)
+
 seoplus gives you a complete, production-ready layer for managing metadata — from document titles and Open Graph tags to JSON-LD schemas, sitemaps, and robots.txt generation. Built on a centralized SEO Manager with provider inheritance, automatic tag deduplication, and route-aware state restoration.
 
 ```bash
