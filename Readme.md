@@ -1,11 +1,11 @@
-# node-seo
+# seoplus
 
 Modern SEO toolkit for React and Vite applications.
 
-node-seo gives you a complete, production-ready layer for managing metadata — from document titles and Open Graph tags to JSON-LD schemas, sitemaps, and robots.txt generation. Built on a centralized SEO Manager with provider inheritance, automatic tag deduplication, and route-aware state restoration.
+seoplus gives you a complete, production-ready layer for managing metadata — from document titles and Open Graph tags to JSON-LD schemas, sitemaps, and robots.txt generation. Built on a centralized SEO Manager with provider inheritance, automatic tag deduplication, and route-aware state restoration.
 
 ```bash
-npm install node-seo
+npm install seoplus
 ```
 
 **Peer dependencies**
@@ -35,7 +35,7 @@ npm install react react-dom
 ## Quick Start
 
 ```tsx
-import { Head } from "node-seo";
+import { Head } from "seoplus";
 
 export default function Home() {
   return (
@@ -58,7 +58,7 @@ export default function Home() {
 Wrap your app with `SEOProvider` to define global defaults. Every `<Head />` and `useSEO()` call inherits these automatically.
 
 ```tsx
-import { SEOProvider } from "node-seo";
+import { SEOProvider } from "seoplus";
 
 function App() {
   return (
@@ -95,7 +95,7 @@ Providers merge with their parent — child values take precedence, unset values
 The primary interface for per-page SEO. Mount it anywhere in your component tree — typically at the top of each page or route.
 
 ```tsx
-import { Head } from "node-seo";
+import { Head } from "seoplus";
 
 <Head
   title="Blog"
@@ -175,7 +175,7 @@ Default card type is `summary_large_image`.
 Inject JSON-LD structured data. Each `<Schema />` renders its own `<script type="application/ld+json">` tag — you can use multiple on one page.
 
 ```tsx
-import { Schema } from "node-seo";
+import { Schema } from "seoplus";
 
 <Schema
   type="Organization"
@@ -243,7 +243,7 @@ Pass any custom JSON-LD by omitting `type`. The `data` object is rendered as-is.
 For imperative control — useful in effects, async callbacks, or outside of JSX.
 
 ```tsx
-import { useSEO } from "node-seo";
+import { useSEO } from "seoplus";
 
 function Blog() {
   const seo = useSEO();
@@ -279,7 +279,7 @@ Generate `sitemap.xml` and `robots.txt` automatically at build time.
 ```ts
 // vite.config.ts
 import { defineConfig } from "vite";
-import seo from "node-seo/vite-plugin";
+import seo from "seoplus/vite-plugin";
 
 export default defineConfig({
   plugins: [
@@ -384,7 +384,7 @@ Sitemap: https://example.com/sitemap.xml
 Inspect the current page's SEO health at runtime.
 
 ```ts
-import { validateSEO } from "node-seo";
+import { validateSEO } from "seoplus";
 
 const result = validateSEO();
 
@@ -414,7 +414,7 @@ Score is 0–100. `passed` is `true` when score is 100 with no warnings.
 
 ## SSR Safety
 
-All DOM access is guarded behind a `typeof document !== "undefined"` check. This makes node-seo safe to use in:
+All DOM access is guarded behind a `typeof document !== "undefined"` check. This makes seoplus safe to use in:
 
 - React with server-side rendering
 - Vite SSR mode
@@ -425,10 +425,10 @@ All DOM access is guarded behind a `typeof document !== "undefined"` check. This
 
 ## TypeScript
 
-node-seo ships with full type definitions. All component props, hook return types, schema data shapes, and plugin options are typed.
+seoplus ships with full type definitions. All component props, hook return types, schema data shapes, and plugin options are typed.
 
 ```tsx
-import type { HeadProps, SchemaType, SEODefaults } from "node-seo";
+import type { HeadProps, SchemaType, SEODefaults } from "seoplus";
 ```
 
 ---
@@ -436,7 +436,3 @@ import type { HeadProps, SchemaType, SEODefaults } from "node-seo";
 ## License
 
 MIT
-
----
-
-Built with 🤍 for modern React and Vite application.
